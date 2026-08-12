@@ -90,7 +90,7 @@ int main( ) {
 	//	Initialize new thread
 	//
 	hCommon = CreateThread( 0, 0, ( LPTHREAD_START_ROUTINE )my_thread, 0, 0, 0 );
-	if( hCommon == INVALID_HANDLE_VALUE )
+	if( hCommon == NULL )
 	{
 		printf( "couldn't create thread! (0x%X)\n", GetLastError( ) );
 		return 1;
